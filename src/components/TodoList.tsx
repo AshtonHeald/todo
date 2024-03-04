@@ -1,6 +1,5 @@
 import { Todo } from "../types/todo";
 import TodoItem from "./TodoItem";
-
 import {
 	SortableContext,
 	verticalListSortingStrategy,
@@ -19,24 +18,23 @@ function TodoList({
 	onDelete,
 	onEdit,
 }: TodoListProps) {
-	
 	return (
 		<>
 			<div className="space-y-3">
-			<SortableContext
+				<SortableContext
 					items={todos.map((todo) => `${todo.id}`)}
 					strategy={verticalListSortingStrategy}
 				>
-				{todos.map((todo) => (
-					<TodoItem
-						todo={todo}
-						key={todo.id}
-						onCompletedChange={onCompletedChange}
-						onDelete={onDelete}
-						onEdit={onEdit}
-					/>
-				))}
-			</SortableContext>
+					{todos.map((todo) => (
+						<TodoItem
+							todo={todo}
+							key={todo.id}
+							onCompletedChange={onCompletedChange}
+							onDelete={onDelete}
+							onEdit={onEdit}
+						/>
+					))}
+				</SortableContext>
 			</div>
 			{todos.length === 0 && (
 				<p className="text-center text-sm text-base-300 select-none pt-5">
@@ -46,4 +44,5 @@ function TodoList({
 		</>
 	);
 }
+
 export default TodoList;
