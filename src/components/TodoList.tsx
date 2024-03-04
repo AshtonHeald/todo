@@ -1,6 +1,11 @@
 import { Todo } from "../types/todo";
 import TodoItem from "./TodoItem";
 
+import {
+	SortableContext,
+	verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+
 interface TodoListProps {
 	todos: Todo[];
 	onCompletedChange: (id: number, completed: boolean) => void;
@@ -18,6 +23,10 @@ function TodoList({
 	return (
 		<>
 			<div className="space-y-3">
+			<SortableContext
+					items={todos.map((todo) => `${todo.id}`)}
+					strategy={verticalListSortingStrategy}
+				>
 				{todos.map((todo) => (
 					<TodoItem
 						todo={todo}
@@ -27,6 +36,7 @@ function TodoList({
 						onEdit={onEdit}
 					/>
 				))}
+			</SortableContext>
 			</div>
 			{todos.length === 0 && (
 				<p className="text-center text-sm text-base-300 select-none pt-5">

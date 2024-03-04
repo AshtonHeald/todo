@@ -23,12 +23,11 @@ function useTodos() {
 	}
 
 	function addTodo(title: string, description?: string) {
-		// Make description optional
 		setTodos((prevTodos) => [
 			{
 				id: Date.now(),
 				title,
-				description: description || "", // Default description to empty string if not provided
+				description: description || "",
 				completed: false,
 			},
 			...prevTodos,
@@ -53,6 +52,7 @@ function useTodos() {
 
 	return {
 		todos,
+		setTodos,
 		setTodoCompleted,
 		addTodo,
 		editTodo,

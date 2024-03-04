@@ -2,6 +2,9 @@ import { GripVertical } from "lucide-react";
 import { Todo } from "../types/todo";
 import TodoItemModal from "./TodoItemModal";
 
+import { useSortable } from "@dnd-kit/sortable";
+import {CSS} from '@dnd-kit/utilities';
+
 interface TodoItemProps {
 	todo: Todo;
 	onCompletedChange: (id: number, completed: boolean) => void;
@@ -15,8 +18,18 @@ function TodoItem({
 	onDelete,
 	onEdit,
 }: TodoItemProps) {
+
+	const { attributes, listeners, setNodeRef, transform, transition } =
+        useSortable({ id: `${todo.id}` });
+
+    const style = {
+        transition,
+        transform: CSS.Transform.toString(transform),
+    };
+
 	return (
-		<>
+		<div className="flex items-center gap-1" style={style}>
+            
 			<label
 				htmlFor={`modal_${todo.id}`}
 				className="flex input input-bordered grow items-center gap-2.5 px-3"
@@ -38,12 +51,14 @@ function TodoItem({
 				>
 					{todo.title}
 				</span>
-				<button>
-					<GripVertical />
-				</button>
+				<div ref={setNodeRef} {...listeners} {...attributes}>
+                <button>
+                    <GripVertical size={20} />
+                </button>
+            </div>
 			</label>
 			<TodoItemModal todo={todo} onDelete={onDelete} onEdit={onEdit} />
-		</>
+		</div>
 	);
 }
 
