@@ -51,10 +51,10 @@ function App() {
 	};
 
 	return (
-		<main className="max-w-lg mx-auto py-10 h-screen space-y-5 overflow-y-auto">
-			<Header />
-			<div className="card shadow-xl m-4">
-				<div className="card-body min-h-64 space-y-6 mb-6">
+		<main className="bg-base-200 max-w-lg mx-auto h-screen space-y-5 overflow-y-auto">
+			<div className="card h-full bg-base-100 shadow-xl">
+				<Header />
+				<div className="card-body overflow-scroll p-0 md:px-0 md:min-h-64 space-y-6">
 					<AddTodoForm onSubmit={addTodo} />
 					<div className="space-y-3">
 						<TodoSummary todos={todos} />

@@ -3,7 +3,7 @@ import ThemeChange from "../components/ThemeChange";
 
 const Header = () => {
 	return (
-		<header className="navbar w-auto m-2">
+		<header className="navbar w-auto p-4 md:px-0">
 			<div className="navbar-start">
 				<CheckCircle size={24} />
 			</div>
