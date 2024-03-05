@@ -1,4 +1,5 @@
 import { Todo } from "../types/todo";
+import TodoTrashModal from "./TodoTrashModal";
 
 interface TodoTrashProps {
 	todos: Todo[];
@@ -13,14 +14,6 @@ function TodoTrash({
 
 	return (
 		<div className="px-4">
-            {/*
-			<button
-				onClick={deleteAllCompleted}
-				className="badge badge-ghost hover:underline text-sm font-medium"
-			>
-				Trash
-			</button>
-            */}
 			{completedTodos.length > 0 && (
 				<button
 					onClick={deleteAllCompleted}
@@ -29,7 +22,14 @@ function TodoTrash({
 					Delete all completed
 				</button>
 			)}
-			<button className="text-red-500 hover:underline flex ml-auto text-sm font-medium">View Trash</button>
+			
+			<label
+				htmlFor={`modal_trash`}
+				className=""
+			>
+				<span className="text-red-500 hover:underline flex ml-auto text-sm font-medium">View Trash</span>
+			</label>
+			<TodoTrashModal />
 		</div>
 	);
 }
