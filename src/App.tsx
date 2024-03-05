@@ -79,11 +79,11 @@ function App() {
                             />
                         </DndContext>
                         <TodoTrash
-						todos={todos}
-						trash={trash}
-						restoreFromTrash={restoreFromTrash}
-						permanentlyDeleteFromTrash={permanentlyDeleteFromTrash}
-						deleteAllCompleted={deleteAllCompleted}
+                            todos={todos}
+                            trash={trash}
+                            restoreFromTrash={restoreFromTrash}
+                            permanentlyDeleteFromTrash={permanentlyDeleteFromTrash}
+                            deleteAllCompleted={deleteAllCompleted}
                         />
                     </div>
                 </div>

@@ -56,15 +56,13 @@ function useTodos(): useTodosReturnType {
 
     // Function to add a new todo
     function addTodo(title: string, description?: string) {
-        setTodos((prevTodos) => [
-            {
-                id: Date.now(),
-                title,
-                description: description || "",
-                completed: false,
-            },
-            ...prevTodos,
-        ]);
+        const newTodo: Todo = {
+            id: Date.now(),
+            title,
+            description: description || "",
+            completed: false,
+        };
+        setTodos((prevTodos) => [newTodo, ...prevTodos]);
     }
 
     // Function to edit an existing todo
