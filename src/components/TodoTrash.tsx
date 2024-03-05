@@ -12,7 +12,7 @@ function TodoTrash({
 	const completedTodos = todos.filter((todo) => todo.completed);
 
 	return (
-		<div>
+		<div className="px-4">
             {/*
 			<button
 				onClick={deleteAllCompleted}

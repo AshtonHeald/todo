@@ -8,7 +8,7 @@ function TodoSummary({ todos }: TodoSummaryProps) {
 	const completedTodos = todos.filter((todo) => todo.completed);
 
 	return (
-		<div className="flex">
+		<div className="flex px-4">
 			<p className="flex gap-1 text-sm font-medium">
 				Tasks
 				<span className="badge badge-ghost">{todos.length}</span>

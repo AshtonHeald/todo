@@ -29,9 +29,9 @@ function TodoItem({
 		<div className="flex items-center gap-1" style={style}>
 			<label
 				htmlFor={`modal_${todo.id}`}
-				className="flex input input-bordered grow items-center gap-2.5 px-3"
+				className="flex input input-bordered grow items-center p-0"
 			>
-				<label className="flex p-1">
+				<label className="flex p-3.5 cursor-pointer">
 					<input
 						type="checkbox"
 						checked={todo.completed}
@@ -48,11 +48,11 @@ function TodoItem({
 				>
 					{todo.title}
 				</span>
-				<div ref={setNodeRef} {...listeners} {...attributes}>
-					<button>
+	
+					<button ref={setNodeRef} {...listeners} {...attributes} className="p-3.5 cursor-pointer">
 						<GripVertical size={20} />
 					</button>
-				</div>
+			
 			</label>
 			<TodoItemModal todo={todo} onDelete={onDelete} onEdit={onEdit} />
 		</div>

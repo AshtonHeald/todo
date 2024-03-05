@@ -16,7 +16,7 @@ function AddTodoForm({ onSubmit }: AddTodoFormProps) {
 	}
 
 	return (
-		<form className="flex gap-2.5" onSubmit={handleSubmit}>
+		<form className="flex gap-2.5 px-4" onSubmit={handleSubmit}>
 			<input
 				value={input}
 				onChange={(e) => setInput(e.target.value)}
@@ -24,7 +24,12 @@ function AddTodoForm({ onSubmit }: AddTodoFormProps) {
 				className="input input-bordered grow"
 			/>
 			<button type="submit" className="btn">
-				Create <PlusCircle size={20} />
+				<span className="hidden sm:block">
+				Create 
+				</span>
+				<span>
+				<PlusCircle size={20} />
+				</span>
 			</button>
 		</form>
 	);
