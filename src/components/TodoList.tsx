@@ -20,7 +20,7 @@ function TodoList({
 }: TodoListProps) {
 	return (
 		<>
-			<div className="space-y-3 overflow-scroll h-[calc(100dvh-280px)] px-4 py-1">
+			<div className="space-y-3 overflow-scroll max-h-[calc(100dvh-240px)] px-4 py-1">
 				<SortableContext
 					items={todos.map((todo) => `${todo.id}`)}
 					strategy={verticalListSortingStrategy}

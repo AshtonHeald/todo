@@ -1,6 +1,5 @@
 import useTodos from "./hooks/useTodos";
 import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
 import AddTodoForm from "./components/AddTodoForm";
 import TodoSummary from "./components/TodoSummary";
 import TodoList from "./components/TodoList";
@@ -82,7 +81,6 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</main>
 	);
 }
