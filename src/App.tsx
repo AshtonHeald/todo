@@ -17,6 +17,7 @@ import {
 import {
     restrictToVerticalAxis,
     restrictToWindowEdges,
+	restrictToFirstScrollableAncestor
 } from "@dnd-kit/modifiers";
 import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
@@ -69,6 +70,7 @@ function App() {
                             modifiers={[
                                 restrictToVerticalAxis,
                                 restrictToWindowEdges,
+								restrictToFirstScrollableAncestor
                             ]}
                         >
                             <TodoList
