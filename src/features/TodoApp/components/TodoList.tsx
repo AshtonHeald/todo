@@ -79,7 +79,7 @@ const TodoList: React.FC<TodoListProps> = ({
 	};
 
 	return (
-		<div className="overflow-y-auto h-auto max-h-[calc(100vh-294px)] px-4">
+		<div className="overflow-y-auto h-auto max-h-[calc(100dvh-294px)] px-4">
 			<DndContext
 				sensors={sensors}
 				collisionDetection={closestCenter}
