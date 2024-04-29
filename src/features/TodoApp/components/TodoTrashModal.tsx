@@ -110,7 +110,7 @@ function TodoTrashModal({
 								onCheckedChange={() => toggleSelect(todo.id)}
 							/>
 						</label>
-						<span className="flex-1 p-2">{todo.title}</span>
+						<span className="flex-1 p-2 truncate ...">{todo.title}</span>
 						<Button
 							variant="ghost"
 							size="icon"
