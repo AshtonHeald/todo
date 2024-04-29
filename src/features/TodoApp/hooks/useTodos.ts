@@ -1,6 +1,5 @@
 // useTodos.ts
 import { useEffect, useState } from "react";
-import { dummyData } from "../data/todos";
 import { Todo } from "../types/todo";
 
 // Define the return type for the hook
@@ -19,12 +18,12 @@ interface useTodosReturnType {
 
 // Custom hook to manage todos and trash
 function useTodos(): useTodosReturnType {
-    // State for todos, initialized from localStorage or dummy data
+    // State for todos, initialized from localStorage
     const [todos, setTodos] = useState<Todo[]>(() => {
         const savedTodos: Todo[] = JSON.parse(
             localStorage.getItem("todos") || "[]"
         );
-        return savedTodos.length > 0 ? savedTodos : dummyData;
+        return savedTodos;
     });
 
     // State for trash, initialized from localStorage

@@ -1,5 +1,7 @@
 import { Todo } from "../types/todo";
 import TodoTrashModal from "./TodoTrashModal";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 interface TodoTrashProps {
 	todos: Todo[]; // Add todos prop to check completed todos
@@ -22,28 +24,34 @@ function TodoTrash({
 	const hasItemsInTrash = trash.length > 0;
 
 	return (
-		<div className="px-4">
-			{hasCompletedTodos && (
-				<button
-					onClick={deleteAllCompleted}
-					className="text-red-500 hover:underline absolute left-0 right-0 mx-auto text-sm font-medium"
-				>
-					Delete all completed
-				</button>
-			)}
+		<div className="px-4 flex">
+			
+			<Dialog>
+					<DialogTrigger asChild >
+					{hasItemsInTrash && (
 
-			{hasItemsInTrash && (
-				<label htmlFor={`modal_trash`} className="">
-					<span className="text-error hover:underline flex ml-auto text-sm font-medium">
+					<Button variant="secondary">
 						View Trash
-					</span>
-				</label>
+					</Button>
+
 			)}
-			<TodoTrashModal
+					</DialogTrigger>
+					<TodoTrashModal
 				trash={trash}
 				restoreFromTrash={restoreFromTrash}
 				permanentlyDeleteFromTrash={permanentlyDeleteFromTrash}
 			/>
+				</Dialog>
+				{hasCompletedTodos && (
+				<Button
+				variant="destructive"
+				className="ml-auto"
+					onClick={deleteAllCompleted}
+				>
+					Delete all completed
+				</Button>
+			)}
+				
 		</div>
 	);
 }

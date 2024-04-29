@@ -1,19 +1,18 @@
 import { CheckCircle } from "lucide-react";
-import ThemeChange from "../components/ThemeChange";
-
+import { ModeToggle } from "../components/mode-toggle";
 const Header = () => {
 	return (
-		<header className="navbar w-auto p-4 md:px-0">
-			<div className="navbar-start">
+		<header className="flex items-center justify-between w-auto min-h-16 p-4">
+			<div className="">
 				<CheckCircle size={24} />
 			</div>
-			<div className="navbar-center">
-				<h1 className="navbar-center font-bold text-3xl text-center">
+			<div className="flex-1">
+				<h1 className="font-bold text-3xl text-center">
 					Todo List
 				</h1>
 			</div>
-			<div className="navbar-end">
-				<ThemeChange />
+			<div className="">
+				<ModeToggle />
 			</div>
 		</header>
 	);
