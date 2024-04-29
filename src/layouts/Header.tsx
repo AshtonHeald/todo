@@ -3,7 +3,7 @@ import { ModeToggle } from "../components/mode-toggle";
 const Header = () => {
 	return (
 		<header className="flex items-center justify-between w-auto min-h-16 p-4">
-			<div className="">
+			<div className="mr-4">
 				<CheckCircle size={24} />
 			</div>
 			<div className="flex-1">
