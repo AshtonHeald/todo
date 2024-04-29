@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/contexts/theme-provider";
 import Header from "./layouts/Header";
 import TodoApp from "./features/TodoApp";
 
