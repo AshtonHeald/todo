@@ -131,7 +131,7 @@ function TodoTrashModal({
 				))}
 			</div>
 			{trash.length === 0 && (
-				<p className="text-center text-sm text-base-300 select-none pt-5">
+				<p className="text-center text-sm text-base-300 select-none  pt-4 pb-16 mb-1.5">
 					Trash is Empty
 				</p>
 			)}
