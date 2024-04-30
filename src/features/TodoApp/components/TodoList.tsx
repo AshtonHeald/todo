@@ -8,12 +8,14 @@ import {
 	useSensor,
 	useSensors,
 } from "@dnd-kit/core";
-import { 
-	SortableContext, 
-	verticalListSortingStrategy, 
-	arrayMove, 
-	sortableKeyboardCoordinates 
+
+import {
+	SortableContext,
+	verticalListSortingStrategy,
+	arrayMove,
+	sortableKeyboardCoordinates,
 } from "@dnd-kit/sortable";
+
 import {
 	restrictToVerticalAxis,
 	restrictToWindowEdges,
@@ -44,11 +46,7 @@ const TodoList: React.FC<TodoListProps> = ({
 			"ontouchstart" in window ||
 			navigator.maxTouchPoints > 0 ||
 			navigator.maxTouchPoints > 0;
-		// Set isWebEntry based on the above check
 		const isWebEntry = !isTouchDevice;
-		// Store the value in localStorage
-		localStorage.setItem("isWebEntry", JSON.stringify(isWebEntry));
-		//console.log("Is web entry:", isWebEntry);
 		return isWebEntry ? PointerSensor : TouchSensor;
 	};
 

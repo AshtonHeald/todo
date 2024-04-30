@@ -1,5 +1,4 @@
-import { CheckCircle } from "lucide-react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, CheckCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,7 +15,10 @@ const Header = () => {
 			<div className="mr-4">
 				<CheckCircle size={32} />
 			</div>
-			<a href="https://github.ashthe.dev/todo" className="font-bold text-3xl block text-center">
+			<a
+				href="https://github.ashthe.dev/todo"
+				className="font-bold text-3xl block text-center"
+			>
 				Todo List
 			</a>
 			<div className="">

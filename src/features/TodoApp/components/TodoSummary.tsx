@@ -16,13 +16,13 @@ function TodoSummary({ todos }: TodoSummaryProps) {
 				<Badge className="font-roboto-mono">{todos.length}</Badge>
 			</div>
 			{hasTodos && (
-        <div className="flex gap-1 text-sm font-bold flex-none">
-          Completed
-          <Badge className="font-roboto-mono">
-            {completedTodos.length}/{todos.length}
-          </Badge>
-        </div>
-      )}
+				<div className="flex gap-1 text-sm font-bold flex-none">
+					Completed
+					<Badge className="font-roboto-mono">
+						{completedTodos.length}/{todos.length}
+					</Badge>
+				</div>
+			)}
 		</div>
 	);
 }

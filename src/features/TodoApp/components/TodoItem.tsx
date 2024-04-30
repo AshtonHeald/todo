@@ -93,9 +93,10 @@ function TodoItem({
 						<DialogTrigger asChild>
 							<DropdownMenuItem>Edit</DropdownMenuItem>
 						</DialogTrigger>
-
 						{/*<DropdownMenuItem>Make a copy</DropdownMenuItem>*/}
-						<DropdownMenuItem onClick={() => onDelete(todo.id)}>Delete</DropdownMenuItem>
+						<DropdownMenuItem onClick={() => onDelete(todo.id)}>
+							Delete
+						</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
 				<TodoItemModal

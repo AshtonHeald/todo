@@ -2,18 +2,21 @@ import { useState, useCallback } from "react";
 import { Todo } from "../types/todo";
 
 import { ChevronDown, XSquare, UndoDot } from "lucide-react";
+
 import {
 	DialogContent,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
 } from "@/components/ui/dialog";
+
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 
@@ -110,12 +113,14 @@ function TodoTrashModal({
 								onCheckedChange={() => toggleSelect(todo.id)}
 							/>
 						</label>
-						<span className="flex-1 p-2 truncate ...">{todo.title}</span>
+						<span className="flex-1 p-2 truncate ...">
+							{todo.title}
+						</span>
 						<Button
 							variant="ghost"
 							size="icon"
 							onClick={() => restoreFromTrash(todo.id)}
-							className="rounded-sm"		
+							className="rounded-sm"
 						>
 							<UndoDot />
 						</Button>
