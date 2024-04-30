@@ -1,5 +1,5 @@
 import { Todo } from "../types/todo";
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "../../../hooks/useLocalStorage";
 
 interface useTodosReturnType {
 	todos: Todo[];

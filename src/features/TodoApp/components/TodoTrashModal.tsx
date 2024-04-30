@@ -101,7 +101,7 @@ function TodoTrashModal({
 				{trash.map((todo: Todo) => (
 					<div
 						key={todo.id}
-						className="grow flex justify-between items-center whitespace-nowrap text-sm font-medium  transition-colors  disabled:pointer-events-none disabled:opacity-50 border border-input bg-background rounded-md"
+						className="grow flex justify-between items-center whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 border border-input bg-background rounded-md"
 					>
 						<label
 							htmlFor={`checkbox_${todo.id}`}
@@ -120,7 +120,7 @@ function TodoTrashModal({
 							variant="ghost"
 							size="icon"
 							onClick={() => restoreFromTrash(todo.id)}
-							className="rounded-sm"
+							className="rounded-sm focus-visible:ring-0 focus-visible:border-2 border-primary"
 						>
 							<UndoDot />
 						</Button>
@@ -128,7 +128,7 @@ function TodoTrashModal({
 							variant="ghost"
 							size="icon"
 							onClick={() => permanentlyDeleteFromTrash(todo.id)}
-							className="rounded-sm"
+							className="rounded-sm focus-visible:ring-0 focus-visible:border-2 border-primary"
 						>
 							<XSquare />
 						</Button>

@@ -40,7 +40,7 @@ function TodoItem({
 		<div
 			ref={setNodeRef}
 			style={style}
-			className="flex justify-between items-center overflow-hidden whitespace-nowrap text-sm font-medium transition-colors  disabled:pointer-events-none disabled:opacity-50 border border-input bg-background rounded-md touch-manipulation"
+			className="flex justify-between items-center overflow-hidden text-sm font-medium transition-colors  disabled:pointer-events-none disabled:opacity-50 border border-input bg-background rounded-md touch-manipulation"
 		>
 			<label
 				htmlFor={`checkbox_${todo.id}`}
@@ -57,7 +57,7 @@ function TodoItem({
 			<span
 				{...attributes}
 				{...listeners}
-				className={`flex-1 select-none  touch-manipulation ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring py-2.5 truncate ... ${
+				className={`flex-1 select-none touch-manipulation overflow-auto focus-visible:outline-none focus-visible:ring-2 ring-inset focus-visible:ring-ring py-2.5 truncate ... ${
 					todo.completed ? "line-through text-muted-foreground" : ""
 				}`}
 			>
@@ -68,7 +68,7 @@ function TodoItem({
 					<DropdownMenuTrigger asChild>
 						<Button
 							variant="ghost"
-							className="rounded-sm"
+							className="rounded-sm focus-visible:ring-0 focus-visible:border-2 border-primary"
 							size="icon"
 						>
 							<svg
