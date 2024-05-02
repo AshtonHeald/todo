@@ -2,7 +2,7 @@
   <img src="public/logo.svg" alt="logo" width="200" height="auto" />
   <h1>Todo List</h1>
   <p>
-    Lorem Ipsum
+    Master Your Tasks: Simplify Your Productivity with Seamless ToDo Management!
   </p>
   <h4>
     <a href="https://github.ashthe.dev/todo/">View Demo</a>
@@ -53,17 +53,15 @@
 
 ### Tech Stack
 
-- Vite
-- React
-- Typescript
-- ShadcnUI
-- TailwindCSS
-  
-  <b>Other</b>
-  
-- DnD-Kit
-- Lucide
-- Fontsource
+<div>
+<img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shadcnui.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+</div>
+
+<b>Other:</b>DnD-Kit, Lucide, Fontsource
 
 <!-- Getting Started -->
 ##  Getting Started
