@@ -33,7 +33,7 @@
 |<img src="public/screenshot2.webp" alt="dark-todos-full" />|<img src="public/screenshot4.webp" alt="dark-todos-trash" />|
 
 ### Description
-  <p>Lorem Ipsum</p>
+  <p>Todo App is a dynamic web application designed to streamline your task management experience; Allowing users to organize their tasks effortlessly. With CRUD functionality, drag-and-drop sorting, modals for detailed task views, and local storage capabilities, Todo App ensures seamless task management and productivity enhancement.</p>
 
 > [!NOTE]
 >This app uses local storage, data will not carry over to/from other devices.
@@ -42,13 +42,13 @@
 
 <dl>
   <dt>CRUD Functionality</dt>
-  <dd>Lorem Ipsum</dd>
+  <dd>Seamlessly Create, Read, Update, and Delete tasks, ensuring flexibility and control over task management.</dd>
   <dt>Drag and Drop Sorting</dt>
-  <dd>Lorem Ipsum</dd>
+  <dd>Facilitate intuitive task organization through drag-and-drop functionality. (press and hold item to drag)</dd>
   <dt>Modals</dt>
-  <dd>Lorem Ipsum</dd>
+  <dd>Enhance user interaction with modal windows, providing a focused view for task editing and trash handling.</dd>
   <dt>Local Storage</dt>
-  <dd>Lorem Ipsum</dd>
+  <dd>Persist task data locally, ensuring seamless access and preservation of tasks across sessions.</dd>
 </dl>
 
 ### Tech Stack
