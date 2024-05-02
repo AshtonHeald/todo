@@ -61,7 +61,7 @@
 <img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
 </div>
 
-<b>Other:</b>DnD-Kit, Lucide, Fontsource
+<p><b>Other:</b> DnD-Kit, Lucide, Fontsource</p>
 
 <!-- Getting Started -->
 ##  Getting Started
