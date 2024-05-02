@@ -2,7 +2,7 @@
   <img src="public/logo.svg" alt="logo" width="200" height="auto" />
   <h1>Todo List</h1>
   <p>
-    Master Your Tasks: Simplify Your Productivity with Seamless ToDo Management!
+    Master Your ToDos: Simplify Your Productivity with Seamless Task Management!
   </p>
   <h4>
     <a href="https://github.ashthe.dev/todo/">View Demo</a>
