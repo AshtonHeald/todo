@@ -5,7 +5,7 @@
     Master Your ToDos: Simplify Your Productivity with Seamless Task Management!
   </p>
   <h4>
-    <a href="https://github.ashthe.dev/todo/">View Demo</a>
+    <a href="https://gh.ashthe.dev/todo/">View Demo</a>
     &emsp;&emsp;
     <a href="https://github.com/AshtonHeald/todo/issues/new">Report Bug</a>
   </h4>
